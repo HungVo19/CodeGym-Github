@@ -1,10 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>$Title$</title>
+    <meta charset="UTF-8">
+    <title>Hello</title>
 </head>
 <body>
-$END$
+<p>output alert</p>
+    <button type="button" onclick="showMessage();">Click Me!</button>
+<hr>
+<p>ouput document.getElementbyId().inner(text/HTML) = </p>
+    <div id="messageDiv"></div>
+    <button type="button" onclick="showMessage1();">Click Me!</button>
+<hr>
+<p>output document.write()</p>
+    <button type="button" onclick="showMessage2();">Click Me!</button>
+<hr>
+<p>output console.log()</p>
+    <button type="button" onclick="showMessage3();">Click Me!</button>
+<hr>
+<p>output confirm()</p>
+    <button type="button" onclick="showMessage4();">Click Me!</button>
+        <script>
+            function showMessage(){
+                alert("Xin chào");
+            }
+            function showMessage1(){
+                document.getElementById("messageDiv").innerHTML = "<h1>" + "Xin chào" + "</h1>";
+            }
+            function showMessage2(){
+                document.write("Xin chào");
+            }
+            function showMessage3(){
+                console.log("Xin chào")
+            }
+            function showMessage4(){
+                confirm("Xin chào")
+            }
+        </script>
+
 </body>
 </html>
