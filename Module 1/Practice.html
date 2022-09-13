@@ -11,11 +11,21 @@
 <p id="result">Demo</p>
 </body>
 <script>
-var count =0;
-while(count <100) {
-    document.write("hr width= "+count +"%>")
-    count++;
-}
+    let sout, i, j;
+    sout = "<table border='1' width='300' cellspacing='0' cellpadding='3'>";
+    i = j = 1;
+    while (i <= 10) {
+        sout += "<tr>";
+        while (j <= 10) {
+            sout += "<td>" + i * j + "</td>";
+            j++;
+        }
+        sout += "</tr>";
+        j = 1;
+        i++;
+    }
+    sout += "</table>";
+    document.write(sout);
 </script>
 </body>
 </html>
