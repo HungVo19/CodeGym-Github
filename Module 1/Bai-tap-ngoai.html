@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Exercise</title>
+</head>
+<body>
+    <input id="a" type="text" value="Enter a"/>
+    <input id="b" type="text" value="Enter b"/>
+    <input id="c" type="text" value="Enter c"/>
+    <button onclick="getvalue()">Click</button>
+    <p id="parameter and square"></p>
+    <p id="powab"></p>
+    <p id="sum"></p>
+    <p id="century"></p>
+    <p id="triangle"></p>
+<script>
+    function getvalue() {
+        let a = +document.getElementById("a").value;
+        let b = +document.getElementById("b").value;
+        let c = +document.getElementById("c").value;
+        let parameter = 4 * a;
+        let square = a * a;
+        let powab = Math.pow(a, b);
+
+        if (a > 0) {
+            document.getElementById("parameter and square").innerHTML = "Parameter is " + parameter + " and Square is " + square ;
+        } else {
+            document.getElementById("parameter and square").innerHTML = "Not valid"
+        }
+
+        document.getElementById("powab").innerHTML= "Result is " + powab;
+
+        if (a === b ) {
+            document.getElementById("sum").innerHTML = "Canceled";
+        }else {
+            if (a>b){
+                let sum = (((a-b)+1) * (a+b)) / 2;
+                document.getElementById("sum").innerHTML = "Sum is " + sum;
+            } else {
+                let sum1 =(((b-a)+1) * (a + b)) / 2;
+                document.getElementById("sum").innerHTML = "Sum is " + sum1;
+            }
+        }
+
+
+        if (a < 100){
+            document.getElementById("century").innerHTML = "It is the 1st century";
+        }else if (a % 100 === 0) {
+            let remain = a/100
+            document.getElementById("century").innerHTML = "It is the " + remain + " century";
+        } else {
+            let remain1 = parseInt(a/100) +1
+            document.getElementById("century").innerHTML = "It is the " + remain1 + " century";
+        }
+
+        if ((a +b)> c && (a+c) > b && (b + c) > a) {
+            if (a===b && b===c) {
+                document.getElementById("triangle").innerHTML = "It is a equilateral triangle";
+            } else if (a===b || b===c||a===c) {
+                document.getElementById("triangle").innerHTML = "It is a eIsosceles triangle";
+            } else {
+                if ((a*a+b*b === c*c) || (a*a+c*c===b*b) || (b*b+c*c===a*a)) {
+                document.getElementById("triangle").innerHTML = "It is a right triangle";
+                } else {
+                    document.getElementById("triangle").innerHTML = "It ia a triangle";
+                }
+            }
+        } else {
+            document.getElementById("triangle").innerHTML = "Not valid"
+        }
+    }
+</script>
+</body>
+</html>

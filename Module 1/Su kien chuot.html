@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Mouse</title>
+</head>
+<body>
+<img id="myimage" src="https://www.transparentpng.com/thumb/football/7EdUOU-football-clipart-hd.png" alt="football clipart hd @transparentpng.com">
+<h3>Click button below to move the image to right</h3>
+<button onclick="moveRight();">Click Me</button>
+<script>
+  let imgobj = null;
+  imgobj = document.getElementById("myimage");
+  function init() {
+    imgobj = document.getElementById("myimage");
+    imgobj.style.position = 'relative';
+    imgobj.style.left = '0px';
+  }
+  function moveRight() {
+    imgobj.style.left = parseInt(imgobj.style.left) + 10 + 'px';
+  }
+  window.onload = init;
+</script>
+</body>
+</html>
