@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+  for(let number=2 ; number<=20; number++){
+    let isPrime = true;
+
+    for (let i=2; i<= number-1;i++){
+      if(number%i===0){
+        isPrime = false;
+        break
+      }
+    }
+    if (isPrime) document.write(number);
+  }
+</script>
+</body>
+</html>

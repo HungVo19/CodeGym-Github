@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Prime number</title>
+</head>
+<body>
+<script>
+    let number = prompt("Enter number: ");
+
+    if (number <=1) {
+
+        alert("Please enter another number");
+
+    } else {
+
+        for (let i = 2; i <= number; i++) {
+
+            let isPrime = true;
+
+            for (let j = 2; j < i; j++) {
+                if (i % j === 0) {
+                    isPrime = false;
+                }
+            }
+            if (isPrime === true) {
+                document.write(i + "<br>");
+            }
+        }
+    }
+</script>
+</body>
+</html>
