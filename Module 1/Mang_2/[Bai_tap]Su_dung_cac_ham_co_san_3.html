@@ -5,6 +5,8 @@
     <title>Title</title>
 </head>
 <body>
+
+</body>
 <script>
     let txt = prompt("Enter your text");
     let array = txt.split("");
@@ -12,15 +14,14 @@
     console.log(array);
 
     for(i=0;i<array.length;i++) {
-      if (array[i] === array[i].toLocaleLowerCase()) {
-        array[i] = array[i].toLocaleUpperCase();
-      } else {
-          array[i] = array[i].toLocaleLowerCase();
-      }
+        if (array[i] === array[i].toLocaleLowerCase()) {
+            array[i] = array[i].toLocaleUpperCase();
+        } else {
+            array[i] = array[i].toLocaleLowerCase();
+        }
     } var newtxt = array.join("");
-      console.log(array)
+    console.log(array)
 
     document.write(newtxt)
 </script>
-</body>
 </html>
