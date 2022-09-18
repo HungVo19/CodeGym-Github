@@ -3,24 +3,49 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
+    <style>
+        table, tr, th, td {
+            border: 1px solid;
+            border-collapse: collapse;
+        }
+
+        table {
+            width: 500px;
+            height: 400px;
+        }
+
+        /*td {*/
+        /*    background-color: blue;*/
+        /*}*/
+
+        #title1 {
+            background-color: blue;
+        }
+
+        .blue {
+            background-color: blue;
+        }
+    </style>
 </head>
 <body>
-<script>
-    let txt = prompt("Enter your text");
-    let array = txt.split("");
+<table>
+    <tr>
+        <th id="title">STT</th>
+        <th id="title1" colspan="2">Information</th>
+        <!--        <th>Age</th>-->
+    </tr>
+    <tr>
+        <td class="blue">1</td>
+        <td rowspan="2">C08</td>
+        <td class="blue">1</td>
+    </tr>
+    <tr>
+        <td class="blue">2</td>
+        <!--        <td>C04</td>-->
+        <td class="blue">4</td>
+    </tr>
+</table>
+</body>
 
-    console.log(array);
-
-    for(i=0;i<array.length;i++) {
-      if (array[i] === array[i].toLocaleLowerCase()) {
-        array[i] = array[i].toLocaleUpperCase();
-      } else {
-          array[i] = array[i].toLocaleLowerCase();
-      }
-    } var newtxt = array.join("");
-      console.log(array)
-
-    document.write(newtxt)
-</script>
 </body>
 </html>
