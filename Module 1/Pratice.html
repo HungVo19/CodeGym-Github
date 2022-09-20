@@ -5,22 +5,15 @@
     <title>Title</title>
 </head>
 <body>
-<script>
-    let txt = prompt("Enter your text");
-    let array = txt.split("");
-
-    console.log(array);
-
-    for(i=0;i<array.length;i++) {
-      if (array[i] === array[i].toLocaleLowerCase()) {
-        array[i] = array[i].toLocaleUpperCase();
-      } else {
-          array[i] = array[i].toLocaleLowerCase();
-      }
-    } var newtxt = array.join("");
-      console.log(array)
-
-    document.write(newtxt)
-</script>
 </body>
+<script>
+    function func1(a) {
+        if (a===2) {
+            return 2;
+        }
+        return a*func1(a-1);
+    }
+    console.log(func1(5))
+</script>
+
 </html>
