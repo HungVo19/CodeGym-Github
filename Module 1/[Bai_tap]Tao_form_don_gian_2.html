@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Simple Form 2</title>
+  <style>
+    table{
+      font-family:"MS Gothic",monospace;
+      background-color: yellow;
+      border: hidden;
+      padding: 5px;
+    }
+  </style>
+</head>
+<body>
+<form>
+  <table>
+    <tr>
+      <th style="background-color: aqua; color: blue" colspan="2">ĐĂNG KÝ HỌC VIÊN</th>
+    </tr>
+    <tr>
+      <td>Họ và tên</td>
+      <td><label>
+        <input style="border-style: inset" type="text">
+      </label></td>
+    </tr>
+    <tr>
+      <td>Ngày sinh</td>
+      <td><label>
+        <input style="border-style: inset" type="date">
+      </label></td>
+    </tr>
+    <tr>
+      <td>Giới tính</td>
+      <td>
+        <label>
+          <input style="border-style: inset" type="radio" name="Giới tính">
+        </label>Nam
+        <label>
+          <input style="border-style: inset" type="radio" name="Giới tính">
+        </label> Nữ
+      </td>
+    </tr>
+    <tr>
+      <td>Địa chỉ</td>
+      <td><label>
+        <textarea style="border-style: inset" rows="4" cols="20"></textarea>
+      </label></td>
+    </tr>
+    <tr>
+      <td>Lớp</td>
+      <td>
+          <select style="border-style: inset" >
+            <option>-Chọn Lớp-</option>
+            <option>A</option>
+            <option>B</option>
+            <option>c</option>
+          </select>
+      </td>
+    </tr>
+    <tr>
+      <td>Email</td>
+      <td><input style="border-style: inset" type="email"></td>
+    </tr>
+    <tr>
+      <td>Điện thoại</td>
+      <td><input style="border-style: inset" type="tel"></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>
+        <input style="border-style:outset" type="submit" value="Đăng ký">
+        <input style="border-style:outset" type="reset" value="Nhập lại">
+      </td>
+    </tr>
+  </table>
+</form>
+
+</body>
+</html>
