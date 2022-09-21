@@ -2,8 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="51524e92-ec78-4aaf-b6f2-5cdd35737ea9" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/[Bai_tap]Tao_form_lay_survey_khach_hang.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Mang_2/Faking_textarea.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Mang_2/[Bai_tap]Luyen_tap_mang_01.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pratice.html" beforeDir="false" afterPath="$PROJECT_DIR$/Pratice.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -64,7 +66,9 @@
       <workItem from="1662554517617" duration="5066000" />
       <workItem from="1662644292610" duration="5029000" />
       <workItem from="1663477522168" duration="15204000" />
-      <workItem from="1663523796650" duration="2341000" />
+      <workItem from="1663523796650" duration="29408000" />
+      <workItem from="1663684761046" duration="1073000" />
+      <workItem from="1663739048443" duration="14000" />
     </task>
     <servers />
   </component>

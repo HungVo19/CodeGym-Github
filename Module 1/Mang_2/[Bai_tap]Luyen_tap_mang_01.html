@@ -1,10 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>$Title$</title>
+    <meta charset="UTF-8">
+    <title>Ex01</title>
 </head>
 <body>
-$END$
+<p><button onclick="ex11()">Bài 1</button></p>
+<p><button onclick="ex12()">Bài 2</button></p>
+<p><button onclick="ex13()">Bài 3</button></p>
+
 </body>
+<script>
+  function ex11() {
+    let array = [];
+    let count = 0;
+    for (let i=0; i<10;i++) {
+      let item = parseInt(prompt("Enter number"));
+      array.push(item);
+      console.log(array);
+      if (item >=10) {
+        count++;
+      }
+    } document.write(count)
+
+  }
+
+
+  function ex12() {
+    let array = [];
+    for (let i=0; i<10;i++) {
+      let item = +prompt("Enter number");
+      array.push(item);
+    }
+    let max = array[0];
+    let index = 0;
+    for (let j=1; j<11;j++) {
+      if (array[j]> max) {
+        max = array[j];
+        index = j;
+      }
+    }
+    document.write("max: " +max + " at index = " + index);
+  }
+
+
+  function ex13() {
+      let array = [];
+      let index = 0;
+      for (let i=0;i<10; i++) {
+          let item = +prompt("Enter number");
+          array.push(item);
+      }
+      let max = array[0];
+      for (let j=0; j<array.length; j++) {
+          if (array[j] > max) {
+              max = array[j];
+              index =j;
+          }
+      }
+      document.write("Max is " + max);
+
+  }
+</script>
 </html>
