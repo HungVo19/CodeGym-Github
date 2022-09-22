@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<canvas id="drawRectangle" width="500" height="500" style="border: 1px solid"></canvas>
+</body>
+<script>
+    Rectangle = function rectangle(width, height){
+        this.width = width;
+        this.height = height;
+        this.perimeter = function perimeter(){
+            return 2*(width + height);
+        }
+        this.area = function (){
+            return  width * height;
+        }
+    }
+</script>
+</html>

@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+<<<<<<< HEAD
     <title> Luyện tập tạo và sử dụng hàm</title>
 </head>
 <body onload="alertMessage('hi'); nhapso()">
@@ -14,6 +15,31 @@
         let aler = alert("Bài 1 Xin chào")
         return aler
     }
+=======
+    <title>Title</title>
+
+</head>
+<body>
+</body>
+<script>
+    let Circle = function(radius) {
+
+        this.radius = radius;
+
+        this.getRadius = function() {
+            return radius;
+        }
+        this.getArea = function() {
+            return Math.PI * radius * radius;
+        }
+
+    };
+    let circle = new Circle(2);
+    let radius = circle.getRadius(); // 2
+
+    let area = circle.getArea(); // 12.566370614359172
+    alert("radius: " + radius + "; area: " + area);</script>
+>>>>>>> 636929298314115953c3562a3a1437ed4bccd404
 
     //bài 2
     function hientangso(a) {
