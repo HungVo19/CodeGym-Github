@@ -3,51 +3,27 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
-    <style>
-        table, tr, th, td {
-            border: 1px solid;
-            border-collapse: collapse;
-        }
 
-        table {
-            width: 500px;
-            height: 400px;
-        }
-
-        /*td {*/
-        /*    background-color: blue;*/
-        /*}*/
-
-        #title1 {
-            background-color: blue;
-        }
-
-        .blue {
-            background-color: blue;
-        }
-    </style>
 </head>
 <body>
-<<<<<<< HEAD
-=======
-<table>
-<tr>
-    <input type="radio" name="Gender">Male
-    <input type="radio" name="Gender">Female
-</tr>
-</table>
-</body>
-
->>>>>>> cc63ef08b90b23ffe33657d3488a466e87cfd36e
 </body>
 <script>
-    function func1(a) {
-        if (a===2) {
-            return 2;
+    let Circle = function(radius) {
+
+        this.radius = radius;
+
+        this.getRadius = function() {
+            return radius;
         }
-        return a*func1(a-1);
-    }
-    console.log(func1(5))
-</script>
+        this.getArea = function() {
+            return Math.PI * radius * radius;
+        }
+
+    };
+    let circle = new Circle(2);
+    let radius = circle.getRadius(); // 2
+
+    let area = circle.getArea(); // 12.566370614359172
+    alert("radius: " + radius + "; area: " + area);</script>
 
 </html>
