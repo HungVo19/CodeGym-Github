@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Ex01</title>
+</head>
+<body>
+<button onclick="bai1()">Bài 1: Tạo hàm alert</button>
+<br><br><button onclick="bai2()">Bài 2: Tạm hàm tăng giá trị đối ố lên 1</button>
+<br><br><button onclick="bai3()">Bài 3: Tổng hai tham số</button>
+<br><br><button onclick="bai4()">Bài 4: Thêm các hàm alert để theo dõi giá trị biến result</button>
+<br><br><button onclick="checkStar()">Bài 5: Kiểm tra chòm sao</button>
+</body>
+<script>
+  //bai1
+  function bai1() {
+    alert("Xin chao");
+  }
+
+  //bai2
+  function bai2(number) {
+    let a = +prompt("Enter a number");
+    a ++
+    alert(a);
+    return a;
+  }
+
+  //bai3
+  function bai3(num1, num2) {
+    let val1 = +prompt("Enter a number");
+    let val2 = +prompt("Enter a number");
+    if (val1 > val2) {
+      alert(val1 + " is greater than" + val2);
+    } else {
+      let sum = val1 + val2;
+      alert("Sum of val1 and val2 is " + sum);
+    }
+  }
+
+  //bai4
+  function addNumber() {
+    firstNum =4;
+    secondNum = 8;
+    result = firstNum + secondNum;
+    return result;
+  }
+  result = 0;
+  result = addNumber()
+
+  function bai4() {
+      let result = 0;
+      alert(result);
+      result = addNumber();
+      alert(result);
+
+  }
+
+  //bai5
+  function checkStar() {
+    let starName = ["POLARIS","ALDEBARAN", "DENEB", "VEGA","ALTAIR","DUBHE","REGULUS"];
+    let constellationName = ["URSA MINOR", "TARURUS", "CYGNUS", "LYRA", "AQUILA", "URSA MAJOR", "LEO"];
+    let userInput = prompt("Enter a star").toUpperCase();
+    let count = 0;
+    for (let i=0; i<7; i++) {
+      if (userInput === starName[i]) {
+        return alert(userInput + " is the star in the constellation of " + constellationName[i]);
+      }
+    }
+
+
+  }
+
+</script>
+</html>

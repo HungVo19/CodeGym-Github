@@ -2,9 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="51524e92-ec78-4aaf-b6f2-5cdd35737ea9" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Mang_2/Faking_textarea.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Mang_2/[Bai_tap]Luyen_tap_mang_01.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Ham_1/[Bai_tap]Chuyen_doi_giua_feet_meter.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Ham_1/[Bai_tap]Ham_kiem_tra_so_nguyen_to.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Ham_1/[Bai_tap]Luyen_tap_tao_va_su_dung_ham_01.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Ham_1/[Thuc_hanh]Chuyen_doi_nhiet_do.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Ham_1/[Thuc_hanh]Tao_va_goi_ham.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Ham_1/[Thuc_hanh]Tim_va_gia_tri_nho_nhat_cua_mang.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Ham_1/demo.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Mang_2/[Bai_tap]Tu_dien.html" beforeDir="false" afterPath="$PROJECT_DIR$/Mang_2/[Bai_tap]Tu_dien.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Pratice.html" beforeDir="false" afterPath="$PROJECT_DIR$/Pratice.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -69,6 +76,9 @@
       <workItem from="1663523796650" duration="29408000" />
       <workItem from="1663684761046" duration="1073000" />
       <workItem from="1663739048443" duration="14000" />
+      <workItem from="1663739108683" duration="162000" />
+      <workItem from="1663742648709" duration="2481000" />
+      <workItem from="1663851645553" duration="6000" />
     </task>
     <servers />
   </component>

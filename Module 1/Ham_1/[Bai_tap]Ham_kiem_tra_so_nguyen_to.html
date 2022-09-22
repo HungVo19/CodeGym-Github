@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>checkPrimeFunction</title>
+</head>
+<body>
+<h3>Prime number Check tool</h3>
+<input id="input" type="text">
+<button id="check" onclick="isPrime()">Check</button>
+<br><span id="result"></span>
+</body>
+<script>
+    function isPrime() {
+        let inputNumber = +document.getElementById("input").value;
+        if (inputNumber < 0) {
+            document.getElementById("result").innerHTML = "Please insert a positive number";
+        } else {
+            if (inputNumber === 0 || inputNumber === 1) {
+                document.getElementById("result").innerHTML = inputNumber + " is not a prime number";
+            }
+            if (inputNumber >= 2) {
+                let isPrime = true;
+                for (let i = 2; i < inputNumber; i++) {
+                    if (inputNumber % i === 0) {
+                        isPrime = false;
+                        break;
+                    }
+                }
+                if (isPrime === true) {
+                    document.getElementById("result").innerHTML = inputNumber + " is a prime number";
+                } else {
+                    document.getElementById("result").innerHTML = inputNumber + " is not a prime number";
+                }
+            }
+        }
+    }
+</script>
+</html>

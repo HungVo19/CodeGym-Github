@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Temperature Converter</title>
+</head>
+<body>
+<h3>Temperature Converter</h3>
+<h4>Type a value in the Fahrenheit field to convert the value</h4>
+<p> Fahrenheit <input id="input" type="text" oninput="convert()"></p>
+<p id="output"></p>
+</body>
+<script>
+  function convert() {
+    let input = document.getElementById("input").value ;
+    let output = (input - 32)/1.8;
+    document.getElementById("output").innerHTML = "Celsius: " + output;
+  }
+</script>
+</html>
