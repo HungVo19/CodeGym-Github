@@ -8,7 +8,7 @@
 
 </body>
 <script>
-  let circle = function (radius) {
+  let Circle = function (radius) {
     this.radius = radius;
     this.getRadius = function (){
       return radius;
@@ -17,13 +17,13 @@
       return Math.PI*radius*radius;
     }
   }
-  circle = new circle(4);
+  let circle = new Circle(4);
   alert("Radius is "+ circle.getRadius() + " and Area is " + circle.getArea());
 
-  circle = new circle(5);
+  circle = new Circle(5);
   alert("Radius is "+ circle.getRadius() + " and Area is " + circle.getArea());
 
-  circle = new circle(6);
+  circle = new Circle(6);
   alert("Radius is "+ circle.getRadius() + " and Area is " + circle.getArea());
 
 </script>

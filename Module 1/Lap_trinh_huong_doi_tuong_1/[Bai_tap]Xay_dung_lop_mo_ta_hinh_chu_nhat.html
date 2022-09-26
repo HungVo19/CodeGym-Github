@@ -8,15 +8,47 @@
 <canvas id="drawRectangle" width="500" height="500" style="border: 1px solid"></canvas>
 </body>
 <script>
-    Rectangle = function rectangle(width, height){
+    function Rectangle(width, height) {
         this.width = width;
         this.height = height;
-        this.perimeter = function perimeter(){
-            return 2*(width + height);
+        this.perimeter = function perimeter() {
+            return 2 * (this.width + this.height);
         }
-        this.area = function (){
-            return  width * height;
+        this.area = function () {
+            return this.width * this.height;
+        }
+        this.reSet = function (){
+            this.width =width;
+            this.height = height;
+        }
+        this.toString = function (){
+            alert("Width is "+ this.width + ", Height is " + this.height + ". Perimeter is " + this.perimeter() + ", Area is "+ this.area());
         }
     }
+
+    function getRandomHex() {
+        return Math.floor(Math.random() * 255);
+    }
+
+    function getRandomColor() {
+        let red = getRandomHex();
+        let green = getRandomHex();
+        let blue = getRandomHex();
+        return "rgb(" + red + "," + blue + "," + green + ")";
+    }
+
+    function drawRectangle(x,y) {
+        let canvas = document.getElementById("drawRectangle").getContext("2d");
+        let color = getRandomColor();
+        canvas.fillStyle = color;
+        let rectangle = new Rectangle(x,y);
+        canvas.fillRect(10,10, rectangle.width, rectangle.height);
+    }
+
+    let rectangle1 = new Rectangle(200,80);
+    rectangle1.toString();
+    console.log(rectangle1.area())
+    drawRectangle(rectangle1.width, rectangle1.height);
+
 </script>
 </html>
