@@ -1,0 +1,133 @@
+* {
+    box-sizing: border-box;
+}
+
+font-face {
+    font-family: -apple-system, "Sans Serif Collection";
+}
+
+body {
+    font-family: -apple-system, "Sans Serif Collection";
+    margin: 0;
+}
+
+
+sup {
+    vertical-align: super;
+    font-size: smaller;
+}
+
+.fixedTopNavBar {
+    background-color: #5f6062;
+    overflow: hidden;
+    position: fixed;
+    top:0px;
+    width: 100%;
+    padding-left: 8%;
+}
+
+.fixedTopNavBar a {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 15px;
+}
+
+
+.iFold {
+    background-image: url("../img/iFold.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 610px;
+    width: 1378px;
+    padding-top: 3px;
+    margin-top: 50px;
+}
+
+.fixed-ratio-resize{
+    max-width: 100%;
+    height: auto;
+    width: auto\9;
+}
+
+.carousel-item{
+    height: 800px;
+}
+
+.iPhone15Ultra {
+    background-image: url("../img/iPhone15Ultra.jpg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 861px;
+    width: 1378px;
+    padding-top: 50px;
+}
+
+.appleCamera {
+    background-image: url("../img/appleCamera.jpg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 787px;
+    width: 1378px;
+    padding-top: 160px;
+}
+
+.watchUltra {
+    background-image: url("../img/watchUltraProMax.jpg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 564px;
+    width: 1378px;
+    padding-top: 50px;
+}
+
+.colAirPod {
+    background-image: url("../img/airPodUltraProMax.jpg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 564px;
+    width: 1378px;
+    padding-top: 50px;
+}
+
+.colAppleWatchSerie9 {
+    background-image: url("../img/watchSerie9.jpg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 564px;
+    width: 1378px;
+    padding-top: 50px;
+}
+
+.colIos {
+    background-image: url("../img/iOS.jpg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 700px;
+    width: 1378px;
+    padding-top: 380px;
+}
+
+.colArcade {
+    background-image: url("../img/appleGame.jpg");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    height: 476px;
+    width: 1378px;
+    padding-top: 10px;
+}
+footer{
+    background-color: lightgrey;
+}
+.textFooter{
+
+    padding-top: 30px;
+    padding-left: 200px;
+    padding-right: 200px;
+    font-size: 12px;
+}
+
+
+
